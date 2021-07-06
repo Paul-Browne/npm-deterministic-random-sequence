@@ -15,16 +15,16 @@ or
 ```js
 var drs = require("deterministic-random-sequence");
 
-var rand = drs("hello");	// "hello" seed, optional (will seed with "" if not set)
-var first = rand();		// 0.6173389465548098 
-var second = rand();	// 0.8618584796786308
-var third = rand();		// 0.18602279876358807
+var rand = drs("hello");  // "hello" seed, optional (will seed with "" if not set)
+var first = rand();       // 0.6173389465548098 
+var second = rand();      // 0.8618584796786308
+var third = rand();       // 0.18602279876358807
 
-// creates the same sequesnce from same initial conditions.
+// creates the same sequence from same initial conditions.
 var rand2 = drs("hello");
-var fourth = rand2();	// 0.6173389465548098 
-var fifth = rand2();	// 0.8618584796786308
-var sixth = rand2();	// 0.18602279876358807
+var fourth = rand2();     // 0.6173389465548098 
+var fifth = rand2();      // 0.8618584796786308
+var sixth = rand2();      // 0.18602279876358807
 ```
 
 ### performance and randomness

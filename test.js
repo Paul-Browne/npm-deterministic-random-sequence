@@ -14,7 +14,6 @@ var f7 = 0;
 var f8 = 0;
 var f9 = 0;	// 0.9 - 0.99999
 var time = Date.now();
-console.log(time);
 for(var j = 0; j < 10000000; j++){
 	var r = t();
 	av += r;
