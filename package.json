@@ -1,0 +1,27 @@
+{
+  "name": "deterministic-random-sequence",
+  "version": "1.0.0",
+  "description": "A function that returns a sequence of deterministic random numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Browne/npm-deterministic-random-sequence.git"
+  },
+  "keywords": [
+    "deterministic",
+    "random",
+    "sequence",
+    "prand",
+    "pseudo",
+    "number"
+  ],
+  "author": "Paul Browne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul-Browne/npm-deterministic-random-sequence/issues"
+  },
+  "homepage": "https://github.com/Paul-Browne/npm-deterministic-random-sequence#readme"
+}
