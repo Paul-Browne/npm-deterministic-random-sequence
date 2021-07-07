@@ -25,6 +25,5 @@ const sfc32 = (a, b, c, d) => {
 module.exports = arr => {
   var str = arr ? arr.toString() : "";
   var seed = xmur3(str);
-  var rand = sfc32(seed(),seed(),seed(),seed());
-  return rand;
+  return sfc32(seed(),seed(),seed(),seed());
 }
