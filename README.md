@@ -1,4 +1,4 @@
-# npm-deterministic-random-sequence
+# deterministic random sequence
 A function that returns a sequence of deterministic random numbers. Given the same seed the function will return the same order of random numbers.
 
 This uses the [MurmurHash3](https://en.wikipedia.org/wiki/MurmurHash) hashing function and the [sfc32](http://pracrand.sourceforge.net/) (Simple Fast Counter) which is part of the [PractRand](http://pracrand.sourceforge.net/) random number testing suite (which it passes of course). sfc32 has a 128-bit state and is very fast in JS.
@@ -13,18 +13,18 @@ or
 
 
 ```js
-var drs = require("deterministic-random-sequence");
+const drs = require("deterministic-random-sequence");
 
-var rand = drs("hello");  // "hello" seed, optional (will seed with "" if not set)
-var first = rand();       // 0.6173389465548098 
-var second = rand();      // 0.8618584796786308
-var third = rand();       // 0.18602279876358807
+const rand = drs("hello");  // "hello" seed, optional (will seed with "" if not set)
+const first = rand();       // 0.6173389465548098 
+const second = rand();      // 0.8618584796786308
+const third = rand();       // 0.18602279876358807
 
 // creates the same sequence from same initial conditions.
-var rand2 = drs("hello");
-var fourth = rand2();     // 0.6173389465548098 
-var fifth = rand2();      // 0.8618584796786308
-var sixth = rand2();      // 0.18602279876358807
+const rand2 = drs("hello");
+const fourth = rand2();     // 0.6173389465548098 
+const fifth = rand2();      // 0.8618584796786308
+const sixth = rand2();      // 0.18602279876358807
 ```
 
 ### performance and randomness
@@ -32,7 +32,7 @@ var sixth = rand2();      // 0.18602279876358807
 Stats for generating 10 million numbers eg. 
 
 ```js
-const drs = require(".");
+const drs = require("deterministic-random-sequence");
 const rand = drs("hello");
 
 const calls = () => {
