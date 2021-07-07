@@ -96,8 +96,8 @@ console.log({
 
 ```js
 { 
-  averageTimeCalls: 35.53,
-  averageTimeCallsPushedToArray: 219.99,
+  averageTimeCalls: 35.53,               // 0.03553 seconds
+  averageTimeCallsPushedToArray: 219.99, // 0.21999 seconds
   dist: { 
     '0.72-0.73': 99958,
     '0.83-0.84': 100553,

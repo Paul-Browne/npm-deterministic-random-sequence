@@ -22,8 +22,8 @@ const sfc32 = (a, b, c, d) => {
   }
 }
 
-module.exports = arr => {
-  var str = arr ? arr.toString() : "";
+module.exports = string => {
+  var str = string ? string.toString() : "";
   var seed = xmur3(str);
   return sfc32(seed(),seed(),seed(),seed());
 }
