@@ -13,7 +13,7 @@ or
 
 
 ```js
-const drs = require("deterministic-random-sequence");
+import drs from "deterministic-random-sequence";
 
 const rand = drs("hello");  // "hello" seed, optional (will seed with "" if not set)
 const first = rand();       // 0.6173389465548098 
@@ -32,7 +32,7 @@ const sixth = rand2();      // 0.18602279876358807
 Stats for generating 10 million numbers eg. 
 
 ```js
-const drs = require("deterministic-random-sequence");
+import drs from "deterministic-random-sequence";
 const rand = drs("hello");
 
 const calls = () => {
